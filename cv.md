@@ -40,3 +40,14 @@ var encryptThis = function(text) {
   }).join(' ')
 }
 ```
+
+## Work experience:
+
+## Education:
+
+1. HTML, CSS on htmlacademy.ru
+2. Javascript on learn.javascript.ru
+
+## English:
+
+Pre-intermediate ([2English](2english.by) school)
