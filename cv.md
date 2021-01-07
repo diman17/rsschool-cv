@@ -1,5 +1,7 @@
 # Dmitriy Pavlov
 
+![My photo](img/avatar.jpg)
+
 ## Contacts:
 
 - **tel:** _+375291936754_
