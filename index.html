@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about-me">About me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#skills">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#my-code">My code</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#work-experience">Work experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#education">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#english">English</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="cv">
+      <h1 class="cv__name">Dmitriy Pavlov</h1>
+      <img class="cv__img img" src="img/avatar.jpg" alt="My photo" />
+      <section class="contacts" id="contacts">
+        <h2 class="contacts__title">Contacts:</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span class="contacts__item-type">tel: </span>
+            <a class="contacts__link" href="tel:+375291936754">+375291936754</a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__item-type">skype: </span>
+            <a class="contacts__link" href="skype:+375291936754?add">+375291936754</a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__item-type">telegram: </span>
+            <a class="contacts__link" href="https://t.me/diman170492">https://t.me/diman170492</a>
+          </li>
+          <li class="contacts__item">
+            <span class="contacts__item-type">e-mail: </span>
+            <a class="contacts__link" href="mailto:dmitriy.pavlov.17.04@gmail.com">dmitriy.pavlov.17.04@gmail.com</a>
+          </li>
+        </ul>
+      </section>
+      <section class="about-me" id="about-me">
+        <h2 class="about-me__title">About me:</h2>
+        <p class="about-me__text">I am a junior frontend developer from Belarus.</p>
+        <p class="about-me__text">My goal is to become a demanded specialist in this field.</p>
+      </section>
+      <section class="skills" id="skills">
+        <h2 class="skills__title">Skills:</h2>
+        <ul class="skills__list">
+          <li class="skills__item"><span>HTML5</span></li>
+          <li class="skills__item"><span>CSS3 (SCSS)</span></li>
+          <li class="skills__item"><span>JavaScript (ES6)</span></li>
+          <li class="skills__item"><span>Git</span></li>
+          <li class="skills__item"><span>Photoshop, Figma</span></li>
+        </ul>
+      </section>
+      <section class="my-code" id="my-code">
+        <h2 class="my-code__title">My code:</h2>
+        <pre class="my-code__text">
+                <code>
+var encryptThis = function(text) {
+    return text.split(' ').map(item => {
+        let num = item.charCodeAt(0)
+        return item.replace(/^\w/, num)
+    }).map(item => {
+        let numbers = item.match(/\d/g).join('')
+        let letters = item.match(/\D/g) || []
+        let firstLetter = letters[0]
+        let lastLetter = letters[letters.length - 1]
+        letters[0] = lastLetter
+        letters[letters.length - 1] = firstLetter
+        return numbers + letters.join('')
+    }).join(' ')
+}
+                </code>
+            </pre>
+      </section>
+      <section class="work-experience" id="work-experience">
+        <h2 class="work-experience__title">Work experience:</h2>
+      </section>
+      <section class="education" id="education">
+        <h2 class="education__title">Education:</h2>
+        <ol class="education__list">
+          <li class="education__item">
+            <span class="education__text">HTML, CSS on </span>
+            <a class="education__link" href="htmlacademy.ru">htmlacademy.ru</a>
+          </li>
+          <li class="education__item">
+            <span class="education__text">Javascript on </span>
+            <a class="education__link" href="learn.javascript.ru">learn.javascript.ru</a>
+          </li>
+        </ol>
+      </section>
+      <section class="english" id="english">
+        <h2 class="english__title">English:</h2>
+        <p class="english__text">Pre-intermediate (<a href="2english.by">2English</a> school)</p>
+      </section>
+    </main>
+    <footer class="footer">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contacts</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about-me">About me</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#skills">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#my-code">My code</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#work-experience">Work experience</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#education">Education</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#english">English</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
