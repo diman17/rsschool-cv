@@ -1,0 +1,300 @@
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('fonts/poppins-v15-latin-regular.woff2') format('woff2'), url('fonts/poppins-v15-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('fonts/poppins-v15-latin-500.woff2') format('woff2'), url('fonts/poppins-v15-latin-500.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''), url('fonts/poppins-v15-latin-600.woff2') format('woff2'), url('fonts/poppins-v15-latin-600.woff') format('woff');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #6b63fd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2b1fff;
+
+  transition-duration: 300ms;
+}
+
+a:active {
+  color: #8f8af7;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  padding: 0;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  width: 1200px;
+  padding: 0;
+  margin: 30px auto 30px auto;
+
+  font-family: 'Poppins', sans-serif;
+
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+.page-header {
+  position: relative;
+
+  padding: 80px;
+}
+
+.page-header::after {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  width: 200px;
+  height: 559px;
+
+  background-color: #938ef6;
+}
+
+.candidate {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.candidate__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.candidate__name {
+  padding: 0;
+  margin: 0;
+
+  font-size: 86px;
+  font-weight: 600;
+}
+
+.candidate__vocation {
+  padding: 0;
+  margin: 0;
+
+  font-size: 64px;
+  font-weight: 400;
+}
+
+.candidate__img {
+  width: 300px;
+  height: 399px;
+
+  border: 1px solid #b6a9a9;
+  border-radius: 2%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20px 80px 40px 80px;
+  margin: 0;
+}
+
+section {
+  width: 500px;
+  margin-bottom: 60px;
+}
+
+.skills__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 300px;
+  padding: 0;
+  margin: 0;
+}
+
+.skills__item {
+  padding: 0;
+  margin: 0;
+  margin-right: 40px;
+  margin-bottom: 20px;
+
+  list-style: none;
+}
+
+.about-me__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.about-me__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.work-experience__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.education__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.education__list {
+  padding: 0;
+  margin: 0;
+}
+
+.education__item {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.my-code__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.my-code__text {
+  margin: 0;
+
+  font-size: 16px;
+}
+
+.english__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.english__text {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contacts {
+  flex-grow: 1;
+}
+
+.contacts__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.contacts__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.contacts__item-type {
+  margin-right: 10px;
+}
+
+.contacts__link {
+  padding: 0;
+  margin: 0;
+
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px 20px 80px;
+}
+
+.date {
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.github__link:hover,
+.rs-school__link:hover,
+.youtube__link:hover {
+  transform: scale(1.1);
+  transition-duration: 300ms;
+}

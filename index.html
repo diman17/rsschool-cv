@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <figure class="candidate">
+        <figcaption class="candidate__description">
+          <p class="candidate__name">Dmitriy Pavlov</p>
+          <p class="candidate__vocation">Frontend developer</p>
+        </figcaption>
+        <img class="candidate__img" src="img/avatar.jpg" alt="Candidate's photo" />
+      </figure>
+    </header>
+    <main class="main">
+      <h1 class="visually-hidden">Curriculum vitae</h1>
+      <section class="skills">
+        <h2 class="skills__title">Skills:</h2>
+        <ul class="skills__list">
+          <li class="skills__item"><img src="img/html.svg" width="60" height="60" alt="HTML5" /></li>
+          <li class="skills__item"><img src="img/css.svg" width="60" height="60" alt="CSS3" /></li>
+          <li class="skills__item"><img src="img/js.svg" width="60" height="60" alt="JavaScript" /></li>
+          <li class="skills__item"><img src="img/git.svg" width="60" height="60" alt="Git" /></li>
+          <li class="skills__item"><img src="img/figma.svg" width="60" height="60" alt="Figma" /></li>
+        </ul>
+      </section>
+      <section class="about-me">
+        <h2 class="about-me__title">About me:</h2>
+        <p class="about-me__text">I am a junior frontend developer from Belarus.</p>
+        <p class="about-me__text">My goal is to become a demanded specialist in this field.</p>
+      </section>
+      <section class="work-experience">
+        <h2 class="work-experience__title">Work experience:</h2>
+      </section>
+      <section class="education">
+        <h2 class="education__title">Education:</h2>
+        <ol class="education__list">
+          <li class="education__item">
+            <span class="education__text">HTML, CSS on </span>
+            <a class="education__link" href="https://htmlacademy.ru/courses">htmlacademy.ru</a>
+          </li>
+          <li class="education__item">
+            <span class="education__text">Javascript on </span>
+            <a class="education__link" href="https://learn.javascript.ru/">learn.javascript.ru</a>
+          </li>
+        </ol>
+      </section>
+      <section class="my-code">
+        <h2 class="my-code__title">My code:</h2>
+        <pre class="my-code__text">
+                <code>
+function domainName(url) {
+  let arr = url.match(/\/?[\w-]+\./g);
+  if (arr[0] === 'www.' || arr[0] === '/www.') {
+    arr.splice(0, 1);
+    return arr[0].match(/[\w-]/g).join('');
+  }
+  return arr[0].match(/[\w-]/g).join('');
+}
+                </code>
+            </pre>
+      </section>
+      <section class="english">
+        <h2 class="english__title">English:</h2>
+        <p class="english__text">Pre-intermediate (<a href="https://2english.by/">2English</a> school)</p>
+      </section>
+      <section class="contacts">
+        <h2 class="contacts__title">Contacts:</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <img class="contacts__item-type" src="img/phone.svg" width="40" height="40" alt="Phone" />
+            <a class="contacts__link" href="tel:+375291936754">+375291936754</a>
+          </li>
+          <li class="contacts__item">
+            <img class="contacts__item-type" src="img/skype.svg" width="40" height="40" alt="Skype" />
+            <a class="contacts__link" href="skype:+375291936754?add">+375291936754</a>
+          </li>
+          <li class="contacts__item">
+            <img class="contacts__item-type" src="img/telegram.svg" width="40" height="40" alt="Telegram" />
+            <a class="contacts__link" href="https://t.me/diman170492">https://t.me/diman170492</a>
+          </li>
+          <li class="contacts__item">
+            <img class="contacts__item-type" src="img/mail.svg" width="40" height="40" alt="Mail" />
+            <a class="contacts__link" href="mailto:dmitriy.pavlov.17.04@gmail.com">dmitriy.pavlov.17.04@gmail.com</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <time class="date" datetime="2021-02-10">2021</time>
+      <a class="github__link" href="https://github.com/diman17">
+        <img class="github-link__logo" src="img/github.svg" width="60" height="60" alt="Github" />
+      </a>
+      <a class="rs-school__link" href="https://rs.school/js/">
+        <img class="rs-school-link__logo" src="img/rs_school_js.svg" width="100" height="60" alt="RS School" />
+      </a>
+      <a class="youtube__link" href="https://youtu.be/chEdybuvv0U">
+        <img class="youtube__logo" src="img/youtube.svg" width="60" height="60" alt="Youtube" />
+      </a>
+    </footer>
+  </body>
+</html>
